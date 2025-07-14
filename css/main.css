@@ -63,12 +63,12 @@ ul {
 }
 
 li::before {
-  content: url("/images/icon-check-green.svg");
+  content: url("./images/icon-check-green.svg");
   padding-right: 16px;
 }
 
 .plan-highlight li::before {
-  content: url("/images/icon-check.svg");
+  content: url("./images/icon-check.svg");
 }
 
 @media (max-width: 600px) {

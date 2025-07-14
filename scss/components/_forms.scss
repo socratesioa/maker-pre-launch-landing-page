@@ -1,0 +1,71 @@
+@use '../abstracts' as *;
+@use '../base/typography' as typo;
+
+.sign-up {
+    display: flex;
+    gap: 20px;
+}
+
+input {
+    background-color: $clr-bg-light;
+    width: 320px;
+    border: 2px solid transparent;
+    outline: 0;
+    border-radius: 999px;
+    padding: 12px 20px;
+    font-family: inherit;
+    @include text-preset(typo.$text-preset-6);
+    color: $clr-text-heading;
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: $clr-field-placeholder;
+}
+
+input:focus {
+    border: 2px solid $clr-bg;
+    outline: 2px solid $clr-error;
+}
+
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.error-message {
+    @include text-preset(typo.$text-preset-7);
+    color: $clr-error;
+    margin-top: 6px;
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 100%;
+    }
+
+    .sign-up {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 12px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .error-message {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+}

@@ -1,0 +1,91 @@
+@use '../abstracts' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+$font-base: "Manrope", sans-serif;
+
+$text-preset-1: (
+    size: 48px,
+    lineHeight: 1.2,
+    weight: 800,
+);
+
+$text-preset-1-mobile: (
+    size: 32px,
+    lineHeight: 1.2,
+    weight: 800,
+);
+
+$text-preset-2: (
+    size: 40px,
+    lineHeight: 1.4,
+    weight: 800,
+);
+
+$text-preset-3: (
+    size: 32px,
+    lineHeight: 1.4,
+    weight: 800,
+);
+
+$text-preset-4: (
+    size: 18px,
+    lineHeight: 1.4,
+    weight: 800,
+);
+
+$text-preset-5: (
+    size: 15px,
+    lineHeight: 1.6,
+    weight: 500,
+);
+
+$text-preset-6: (
+    size: 15px,
+    lineHeight: 1.4,
+    weight: 800,
+);
+
+$text-preset-7: (
+    size: 12px,
+    lineHeight: 1.6,
+    weight: 500,
+);
+
+body {
+    font-family: $font-base;
+    color: $clr-text-body;
+    background-color: $clr-bg;
+}
+
+h1 {@include text-preset($text-preset-1); color: $clr-text-heading; text-align: center}
+h2 {@include text-preset($text-preset-3); color: $clr-text-heading;}
+h3 {@include text-preset($text-preset-3); color: $clr-text-heading; text-align: center}
+h4 {@include text-preset($text-preset-4); color: $clr-text-heading;}
+h5 {@include text-preset($text-preset-4); color: $clr-text-heading;}
+
+p {@include text-preset($text-preset-5);}
+
+.pricing {@include text-preset($text-preset-2);}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: $clr-text-heading;
+}
+
+li::before {
+    content: url("/images/icon-check-green.svg");
+    padding-right: 16px;
+}
+
+.plan-highlight li::before {
+    content: url("/images/icon-check.svg");
+}
+
+@media (max-width: 600px) { 
+  h1 { @include text-preset($text-preset-1-mobile); }
+  h2 { @include text-preset($text-preset-1-mobile); }
+}

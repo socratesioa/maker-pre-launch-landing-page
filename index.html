@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Maker pre-launch landing page</title>
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <header>
+        <div class="header-container">
+          <img src="./images/logo.svg" class="logo" alt="Maker Logo" />
+        </div>
+        <div class="hero-mobile">
+          <img
+            src="/images/illustration-hero-mobile.png"
+            class="hero-bg"
+            alt="Illustration of people working"
+          />
+        </div>
+        <div class="hero-left"></div>
+
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Get paid for the work you <span>love</span> to do.</h1>
+            <p>
+              The 9-5 grind is so last century. We believe in living life on
+              your own terms. Whether you’re looking to escape the rat race or
+              set up a side hustle, we’ve got you covered.
+            </p>
+          </div>
+          <img
+            src="/images/icon-scroll.svg"
+            class="icon-scroll"
+            alt="Illustration of scroll"
+          />
+        </div>
+        <div class="hero-right"></div>
+      </header>
+      <main>
+        <section id="features">
+          <div class="feature-card offset-hor">
+            <div class="feature-icon-wrapper">
+              <img
+                src="./images/illustration-passions.svg"
+                class="feature-icon"
+                alt="Illustration of an egg with a bow tie and dripping paint"
+              />
+            </div>
+            <div class="feature-text">
+              <h4>Indulge your passions</h4>
+              <p>
+                Your passions shouldn't be just for the weekend. Earn a living
+                doing what you love.
+              </p>
+            </div>
+          </div>
+          <div class="feature-card offset">
+            <div class="feature-icon-wrapper">
+              <img
+                src="./images/illustration-financial-freedom.svg"
+                class="feature-icon"
+                alt="Illustration of a jar with coins"
+              />
+            </div>
+            <div class="feature-text">
+              <h4>Gain financial freedom</h4>
+              <p>
+                Start making money work for you. There’s nothing quite like
+                earning while you sleep.
+              </p>
+            </div>
+          </div>
+          <div class="feature-card offset-hor">
+            <div class="feature-icon-wrapper">
+              <img
+                src="./images/illustration-lifestyle.svg"
+                class="feature-icon"
+                alt="Illustration of a Martini drink"
+              />
+            </div>
+            <div class="feature-text">
+              <h4>Choose your lifestyle</h4>
+              <p>
+                Own your daily schedule. Fancy a lie-in? Go for it! Take charge
+                of your week.
+              </p>
+            </div>
+          </div>
+          <div class="feature-card offset">
+            <div class="feature-icon-wrapper">
+              <img
+                src="./images/illustration-work-anywhere.svg"
+                class="feature-icon"
+                alt="Illustration of a car with luggage"
+              />
+            </div>
+            <div class="feature-text">
+              <h4>Work from anywhere</h4>
+              <p>
+                Selling online means not being pinned down. Want to work AND
+                travel? Go for it!
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="plans">
+          <div class="plans-intro">
+            <h2>Our pricing plans</h2>
+            <p>
+              We only make money when our creators make money. Our plans are
+              always affordable, and it’s completely free to get started.
+            </p>
+          </div>
+          <div class="plan-cards-container">
+            <div class="plan-card normal">
+              <img
+                src="/images/icon-free.svg"
+                class="normal-icon"
+                alt="Free Plan Illustration"
+              />
+              <div class="plan-card-intro">
+                <h5>Dip your toe</h5>
+                <p>
+                  Just getting started? No problem at all! Our free plan will
+                  take you a long way.
+                </p>
+              </div>
+
+              <span class="pricing free">Free</span>
+              <ul>
+                <li>Unlimited products</li>
+                <li>Basic analytics</li>
+                <li>Limited marketplace exposure</li>
+                <li>10% fee per transaction</li>
+              </ul>
+            </div>
+            <div class="plan-card highlight">
+              <img
+                src="/images/icon-paid.svg"
+                class="highlight-icon"
+                alt="Paid plan illustration"
+              />
+              <div class="plan-card-intro">
+                <h5>Dive right in</h5>
+                <p>
+                  Ready for the big time? Our paid plan will help you take your
+                  business to the next level.
+                </p>
+              </div>
+              <div class="month">
+                <span class="pricing">$25.00</span>
+                <p>/ month</p>
+              </div>
+              <ul class="plan-highlight">
+                <li>Custom domain</li>
+                <li>Advanced analytics and reports</li>
+                <li>High marketplace visibility</li>
+                <li>5% fee per transaction</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <h3>Get notified when we launch</h3>
+        <form id="form" novalidate>
+          <div class="sign-up">
+            <label for="email" class="sr-only">Email Address</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Email address"
+              autocomplete="off"
+              required
+            />
+            <button type="submit">Get notified</button>
+          </div>
+          <span
+            aria-live="polite"
+            id="email-error"
+            class="error-message"
+          ></span>
+        </form>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

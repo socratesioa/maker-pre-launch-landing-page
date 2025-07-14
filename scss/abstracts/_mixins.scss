@@ -1,0 +1,7 @@
+@use "sass:map";
+
+@mixin text-preset($preset) {
+  font-size: map.get($preset, size);
+  line-height: map.get($preset, lineHeight);
+  font-weight: map.get($preset, weight);
+} 

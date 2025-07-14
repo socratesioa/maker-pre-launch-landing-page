@@ -1,0 +1,164 @@
+@use '../abstracts' as *;
+@use '../base/typography' as typo;
+
+#features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    max-width: 1116px;
+    margin: auto;
+    margin-bottom: 160px;
+    
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.feature-icon-wrapper {
+    background-color: $clr-bg-light;
+    width: 160px;
+    height: 164px;
+    border-radius: 48px;
+    display: grid;
+    place-content: center;
+}
+
+.offset {
+    margin-top: 48px;
+}
+
+.feature-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+@media (max-width: 820px) {
+    #features {
+        grid-template-columns: 1fr;
+        margin-bottom: 96px;
+        padding: 0 32px;
+    }
+
+    #features p {
+        max-width: 344px;
+    }
+
+    .feature-card {
+        flex-direction: row;
+        align-items: center;
+        gap: 48px;
+    }
+
+    .feature-icon-wrapper {
+        width: 120px;
+        height: 120px;
+        border-radius: 32px;
+    }
+
+    .feature-icon {
+        scale: 0.7;
+    }
+
+    .feature-text {
+        gap: 16px;
+    }
+
+    .offset {
+        margin-top: 0;
+    }
+
+    .offset-hor {
+        margin-left: 48px;
+    }
+}
+
+@media (max-width: 600px) {
+    #features {
+        margin-bottom: 80px;
+        padding: 0 16px;
+    }
+
+    #features p {
+        max-width: unset;
+    }
+
+    .feature-card {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .feature-text {
+        gap: 12px;
+        text-align: center;
+    }
+
+    .offset-hor {
+        margin-left: 0;
+    }
+
+}
+
+.plan-card {
+    background-color: $clr-bg-light;
+    padding: 46px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 8px;
+}
+
+.plan-card-intro {
+    display: grid;
+    gap: 20px;
+}
+
+.free {
+    color: $clr-text-heading;
+}
+
+.normal {
+    position: relative;
+}
+
+.normal-icon {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    top: -23px;
+    left: 37px;
+}
+
+.highlight {
+    background-color: $clr-accent;
+    padding: 64px 32px;
+    color: $clr-bg;
+    position: relative;
+}
+
+.highlight-icon {
+  width: 50px;
+  height: 65px;
+  position: absolute;
+  top: -32px;
+  left: 38px;
+}
+
+.highlight h5 {
+    color: $clr-bg;
+}
+
+.highlight ul {
+    color: $clr-bg;
+}
+
+.month {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

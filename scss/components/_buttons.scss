@@ -1,0 +1,30 @@
+@use '../abstracts' as *;
+@use '../base/typography' as typo;
+
+button {
+    @include text-preset(typo.$text-preset-6);
+    background-color: $clr-accent;
+    color: $clr-bg-light;
+    border: 2px solid transparent;
+    border-radius: 999px;
+    padding: 12px 24px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 2px solid $clr-accent;
+    color: $clr-text-heading;
+    background-color: $clr-bg;
+}
+
+button:focus {
+  border: 2px solid $clr-bg;
+  outline: 2px solid $clr-error;
+}
+
+@media (max-width: 600px) { 
+  button {
+    width: 100%;
+  }
+}

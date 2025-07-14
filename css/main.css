@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 body {
   font-family: "Manrope", sans-serif;
-  color: #777F98;
-  background-color: #080C20;
+  color: #777f98;
+  background-color: #080c20;
 }
 
 h1 {
   font-size: 48px;
   line-height: 1.2;
   font-weight: 800;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -17,14 +17,14 @@ h2 {
   font-size: 32px;
   line-height: 1.4;
   font-weight: 800;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 h3 {
   font-size: 32px;
   line-height: 1.4;
   font-weight: 800;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -32,14 +32,14 @@ h4 {
   font-size: 18px;
   line-height: 1.4;
   font-weight: 800;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 h5 {
   font-size: 18px;
   line-height: 1.4;
   font-weight: 800;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 p {
@@ -59,7 +59,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 li::before {
@@ -151,7 +151,7 @@ header {
 }
 
 .hero-text span {
-  color: #3EE9E5;
+  color: #3ee9e5;
 }
 
 @media (max-width: 1024px) {
@@ -294,8 +294,8 @@ button {
   font-size: 15px;
   line-height: 1.4;
   font-weight: 800;
-  background-color: #3EE9E5;
-  color: #093F68;
+  background-color: #3ee9e5;
+  color: #093f68;
   border: 2px solid transparent;
   border-radius: 999px;
   padding: 12px 24px;
@@ -304,14 +304,14 @@ button {
 }
 
 button:hover {
-  border: 2px solid #3EE9E5;
-  color: #FFFFFF;
-  background-color: #080C20;
+  border: 2px solid #3ee9e5;
+  color: #ffffff;
+  background-color: #080c20;
 }
 
 button:focus {
-  border: 2px solid #080C20;
-  outline: 2px solid #FF2965;
+  border: 2px solid #080c20;
+  outline: 2px solid #ff2965;
 }
 
 @media (max-width: 600px) {
@@ -335,7 +335,7 @@ button:focus {
 }
 
 .feature-icon-wrapper {
-  background-color: #093F68;
+  background-color: #093f68;
   width: 160px;
   height: 164px;
   border-radius: 48px;
@@ -408,7 +408,7 @@ button:focus {
   }
 }
 .plan-card {
-  background-color: #093F68;
+  background-color: #093f68;
   padding: 46px 32px;
   display: flex;
   flex-direction: column;
@@ -422,7 +422,7 @@ button:focus {
 }
 
 .free {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .normal {
@@ -438,9 +438,9 @@ button:focus {
 }
 
 .highlight {
-  background-color: #3EE9E5;
+  background-color: #3ee9e5;
   padding: 64px 32px;
-  color: #080C20;
+  color: #080c20;
   position: relative;
 }
 
@@ -453,11 +453,11 @@ button:focus {
 }
 
 .highlight h5 {
-  color: #080C20;
+  color: #080c20;
 }
 
 .highlight ul {
-  color: #080C20;
+  color: #080c20;
 }
 
 .month {
@@ -472,7 +472,7 @@ button:focus {
 }
 
 input {
-  background-color: #093F68;
+  background-color: #093f68;
   width: 320px;
   border: 2px solid transparent;
   outline: 0;
@@ -482,17 +482,17 @@ input {
   font-size: 15px;
   line-height: 1.4;
   font-weight: 800;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
 }
 
 input::placeholder {
-  color: #6B8CA4;
+  color: #6b8ca4;
 }
 
 input:focus {
-  border: 2px solid #080C20;
-  outline: 2px solid #FF2965;
+  border: 2px solid #080c20;
+  outline: 2px solid #ff2965;
 }
 
 .sr-only {
@@ -511,7 +511,7 @@ input:focus {
   font-size: 12px;
   line-height: 1.6;
   font-weight: 500;
-  color: #FF2965;
+  color: #ff2965;
   margin-top: 6px;
 }
 

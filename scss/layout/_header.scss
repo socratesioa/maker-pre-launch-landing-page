@@ -22,14 +22,14 @@ header {
 
 .hero-left {
     grid-area: hero-left;
-    background: url("./images/illustration-hero-left.svg");
+    background: url("../images/illustration-hero-left.svg");
     background-position: right;
     background-repeat: no-repeat;
 }
 
 .hero-right {
     grid-area: hero-right;
-    background: url("./images/illustration-hero-right.svg");
+    background: url("../images/illustration-hero-right.svg");
     background-position: left;
     background-repeat: no-repeat;
 }
@@ -47,7 +47,7 @@ header {
     justify-items: center;
     margin: 0 auto;
     padding: 70px 0;
-    background: url("./images/bg-hero-squiggle.svg");
+    background: url("../images/bg-hero-squiggle.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
